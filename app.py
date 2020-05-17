@@ -3,6 +3,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__)
 app.config.from_pyfile("config/base_config.py")
+# 开启调试板
 toolbar = DebugToolbarExtension(app)
 
 

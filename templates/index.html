@@ -8,9 +8,27 @@
 <body>
 
 {% raw %}
-<div id="first" >
+<div id="first" title="i love">
     {{ message }}
 </div>
+<div id="second" v-if="seen">
+    你可以看到我
+</div>
+
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo }}
+    </li>
+  </ol>
+</div>
+
+
+
+
+
+
+
 {% endraw %}
 
 <script src="{{ url_for('static', filename='default.js') }}" type="text/javascript" charset="utf-8"></script>
