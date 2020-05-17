@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ url_for('static', filename='vue.js') }}" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
-HELLO WORLD~
+{% raw %}
+<div id="first" >
+    {{ message }}
+</div>
+{% endraw %}
 
+<script src="{{ url_for('static', filename='default.js') }}" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -1,7 +1,10 @@
 from flask import Flask, render_template
+from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__)
 app.config.from_pyfile("config/base_config.py")
+toolbar = DebugToolbarExtension(app)
+
 
 @app.route('/')
 def hello_world():
