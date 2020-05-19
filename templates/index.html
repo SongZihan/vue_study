@@ -12,7 +12,7 @@
     {{ message }}
 </div>
 <div id="second" v-if="seen">
-    你可以看到我
+    <p>你可以看到我</p>
 </div>
 
 <div id="app-4">
@@ -21,6 +21,30 @@
       {{ todo }}
     </li>
   </ol>
+</div>
+<!-- 动态分配标签属性和标签名 -->
+<div id="app-5" v-bind:[attribute_name]="value">
+    不错不错，味道好极了
+</div>
+<!-- 使用函数,这个函数会在每次刷新页面时返回最新的时间 -->
+<div id="app-6">
+    {{ date() }}
+</div>
+
+<!-- 创建一个动态改变的请求回答框 -->
+<div id="app-7" >
+    <p>问题：1+1 = <input v-model="reply"></p>
+    <p>{{ answer }}</p>
+</div>
+
+<!-- 创建一个自定义的按钮 每次按下加一,必须包含一个外壳，在js中注册 -->
+<div id="my_component">
+    <my_button></my_button>
+    <my_button></my_button>
+</div>
+
+<div id="app-8">
+    <click-model></click-model>
 </div>
 
 
