@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Order from '../views/Order.vue'
+import Footer from '../views/Footer.vue'
+import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +17,16 @@ const routes = [
     path: '/Order',
     name: 'Order',
     component: Order
+  },
+  {
+    path: '/Footer',
+    name: 'Footer',
+    component: Footer
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login
   }
   // {
   //   path: '/about',

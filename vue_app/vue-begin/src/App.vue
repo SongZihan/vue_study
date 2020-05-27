@@ -2,11 +2,24 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/order">Order</router-link>
+      <router-link to="/Order">Order</router-link> |
+      <router-link to="/Login">Login</router-link>
     </div>
     <router-view/>
+    <szh-footer></szh-footer>
   </div>
 </template>
+
+<script>
+// 导入组件，然后使用
+import Footer from './views/Footer'
+export default {
+  name: 'app',
+  components: {
+    'szh-footer': Footer
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

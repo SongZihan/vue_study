@@ -8,7 +8,7 @@ export default new Vuex.Store({
     list: []
   },
   mutations: {
-    set_list(state, value) {
+    set_list (state, value) {
       state.list = value
     }
   },
